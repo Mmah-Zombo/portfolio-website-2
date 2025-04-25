@@ -40,6 +40,7 @@ img {
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
+    z-index: 10;
 }
 
 .btn-primary {
@@ -223,11 +224,10 @@ nav ul li a:hover {
 
 .hero-image {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
+    top: -7.6rem;
+    right: 3rem;
+    width: 60%;
+    /* height: 80%; */
     z-index: 3;
 }
 
@@ -532,10 +532,17 @@ nav ul li a:hover {
 .contact-content {
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .contact-info {
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
 }
 
 .contact-item {
